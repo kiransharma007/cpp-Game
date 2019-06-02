@@ -1,0 +1,4 @@
+﻿  spawnBalloon.cpp
+e:\visual studio stuff\the game\the game\spawnballoon.cpp(13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+e:\visual studio stuff\the game\the game\spawnballoon.cpp(22): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  THE GAME.vcxproj -> E:\Visual Studio Stuff\THE GAME\THE GAME\Debug\THE GAME.exe
