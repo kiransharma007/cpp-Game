@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "pch.h"
 #include "Engine.h"
+#include <sstream>
+#include<iomanip>
 
 void Engine::draw()
 {
@@ -36,6 +38,21 @@ void Engine::draw()
 	{
 		d_Window.draw(d_apple[i]);
 	}
+
+	// To display score and lives
+
+	Text text;
+	Font font;
+	font.loadFromFile("Bubblegum.ttf");
+	text.setFont(font);
+	text.setCharacterSize(75);
+	text.setFillColor(sf::Color::White);
+
+	//draw it on screen
+	std::stringstream ss;
+	ss <<setw(20)<< "Score:" << score <<setw(40)<< "    Lives:" << lives;
+	text.setString(ss.str());
+	d_Window.draw(text);
 
 	// Show everything we have just drawn
 	d_Window.display();

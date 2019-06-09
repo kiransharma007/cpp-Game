@@ -34,6 +34,7 @@ void Engine::start()
 		// Make a fraction from the delta time
 		float dtAsSeconds = dt.asSeconds();
 		input();
+		collision();
 		spawnBalloon();
 		update(dtAsSeconds);
 		draw();

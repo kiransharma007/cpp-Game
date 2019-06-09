@@ -1,6 +1,7 @@
 #include"stdafx.h"
 #include"pch.h"
 #include"doodle.h"
+#include"Engine.h"
 
 Doodle::Doodle()
 {
@@ -87,3 +88,4 @@ void Doodle::update(float elapsedTime)
 	d_Sprite.setPosition(d_Position);
 
 }
+

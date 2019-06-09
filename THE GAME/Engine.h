@@ -32,12 +32,16 @@ private:
 	int spawnTime = 0;
 	int spawnTime1 = 0;
 
+	int lives = 7;
+	int score = 0;
+
 
 	// Private functions for internal use only
 	void input();
 	void update(float dtAsSeconds);
 	void draw();
 	void spawnBalloon();
+	void collision();
 
 public:
 	// The Engine constructor
