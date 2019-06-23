@@ -23,6 +23,9 @@ void Engine::collision()
 		{
 			d_rotten.erase(d_rotten.begin() + i);
 			score--;
+			rotten_collision++;
+			if (rotten_collision % 1000 == 0)
+				lives--;
 		}
 	}
 }

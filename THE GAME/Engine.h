@@ -31,6 +31,8 @@ private:
 	vector<Sprite>d_apple;
 	int spawnTime = 0;
 	int spawnTime1 = 0;
+	int rotten_collision = 0;
+	int apple_collision = 0;
 
 	int lives = 7;
 	int score = 0;
